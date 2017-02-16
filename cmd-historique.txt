@@ -183,4 +183,118 @@ Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (master)
 $ git checkout exercice-5-anim-svg-js
 Switched to branch 'exercice-5-anim-svg-js'
 
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git status
+On branch exercice-5-anim-svg-js
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
+        modified:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git status
+On branch exercice-5-anim-svg-js
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git log
+commit 7e1fd5ab9d97cf2739d09c55e5a5c458e9147411
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Feb 14 16:05:50 2017 -0500
+
+    initialisation de l'exercie - creation triangle avec scroll
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git commit -m "finaliser exercice"
+[exercice-5-anim-svg-js 1294a8e] finaliser exercice
+ 4 files changed, 189 insertions(+), 38 deletions(-)
+ rewrite index.html (69%)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git log
+commit 1294a8e19efdc6cb88d29a9841da95f3b94bc022
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 16 11:27:43 2017 -0500
+
+    finaliser exercice
+
+commit 7e1fd5ab9d97cf2739d09c55e5a5c458e9147411
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Feb 14 16:05:50 2017 -0500
+
+    initialisation de l'exercie - creation triangle avec scroll
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git status
+On branch exercice-5-anim-svg-js
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git push https://github.com/pootannie/vt-exercice05 exerccie-5-anim-svg-js
+error: src refspec exerccie-5-anim-svg-js does not match any.
+error: failed to push some refs to 'https://github.com/pootannie/vt-exercice05'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git push https://github.com/pootannie/vt-exercice05 exercice-5-anim-svg-js
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 3.66 KiB | 0 bytes/s, done.
+Total 14 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/pootannie/vt-exercice05
+ * [new branch]      exercice-5-anim-svg-js -> exercice-5-anim-svg-js
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git status
+On branch exercice-5-anim-svg-js
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        acces.txt
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice05 (exercice-5-anim-svg-js)
+$ git add .

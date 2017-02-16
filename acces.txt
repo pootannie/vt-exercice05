@@ -1,0 +1,2 @@
+github: https://github.com/pootannie/vt-exercice05
+site: http://veille.annievu.ca/exercice05/index.html
